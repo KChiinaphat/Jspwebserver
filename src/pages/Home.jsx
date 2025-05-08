@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React from "react";
 
+
 function Home() {
   return (
     <div className="flex flex-col justify-center items-center py-20 bg-gray-100">

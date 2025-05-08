@@ -5,8 +5,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AboutUs from "./pages/About";
 import Home from "./pages/Home";
-import Product from "./pages/Product";
+import Product from "./pages/Product";  
 import Service from "./pages/Service";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   return (
@@ -14,10 +15,12 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/service" element={<Service />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
           {/* สามารถเพิ่ม Route สำหรับหน้าอื่นๆ ได้ */}
         </Routes>
       </main>
